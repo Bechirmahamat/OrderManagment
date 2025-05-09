@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\AuthManagement\Commands\Delete\" />
+    <Folder Include="Features\AuthManagement\Commands\Update\" />
+    <Folder Include="Features\AuthManagement\Queries\GetAll\" />
+    <Folder Include="Features\AuthManagement\Queries\GetById\" />
+    <Folder Include="Features\CategoryManagement\Queries\GetAll\" />
+    <Folder Include="Features\CategoryManagement\Queries\GetById\" />
+    <Folder Include="Features\CompanyManagement\" />
+    <Folder Include="Features\ProductManagement\" />
+    <Folder Include="Features\OrderManagement\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
