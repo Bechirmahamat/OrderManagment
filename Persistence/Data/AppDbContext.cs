@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Data
 {
-    public class AppDbContext : IdentityUserContext<ApplicationUser>
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Product> Products { get; private set; }
         public DbSet<ProductCategory> ProductCategories { get; private set; }

@@ -81,6 +81,7 @@ namespace Persistence.Extentions
                 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
                 options.User.RequireUniqueEmail = true;
             });
+
             return services;
         }
 

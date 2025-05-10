@@ -19,16 +19,18 @@ namespace Persistence.Repositories
             this.signInManager = signInManager;
             this.logger = logger;
         }
-        public async Task<User> Login(string email, string password)
+        public async Task<User?> Login(string email, string password)
         {
             try
             {
-                var user = userManager.Users.FirstOrDefault(x => x.Email == email);
+
+                var user = await userManager.Users.FirstOrDefaultAsync(x => x.Email == email);
                 if (user == null)
                 {
                     return new User();
                 }
-                var result = await signInManager.PasswordSignInAsync(user, password, false, false);
+                var result = await signInManager.PasswordSignInAsync(user.UserName, password, false, false);
+
                 if (result.Succeeded)
                 {
                     return (new User
@@ -42,7 +44,7 @@ namespace Persistence.Repositories
                 else
                 {
                     logger.LogWarning("Invalid password");
-                    return new User();
+                    return null;
                 }
 
             }

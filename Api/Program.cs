@@ -1,4 +1,5 @@
 using Core.Extentions;
+using Infrastructure.Configurations;
 using Persistence.Extentions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,5 +27,12 @@ app.UseAuthorization();
 
 
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await RoleSeeder.SeedRolesAsync(services);
+}
+
 
 app.Run();
