@@ -2,17 +2,18 @@
 {
     public class Order : BaseEntity
     {
-        public string Name { get; set; }
-        public double TotalPrice { get; set; }
+        public string OrderStatus { get; set; }
+        public double TotalPrice => OrderItems.Sum(oi => oi.Price * oi.Quantity);
         public string UserId { get; set; }
-        public User? User { get; set; }
+        public Guid CompanyId { get; set; }  // Add this missing foreign key
 
+        public Company Company { get; set; }  // Navigation to Company
         public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
-        public Order(string name, double totalPrice, string userId)
+        public Order(string userId, Guid companyId)
         {
-            Name = name;
-            TotalPrice = totalPrice;
+            OrderStatus = "Pending"; // Default status
             UserId = userId;
+            CompanyId = companyId;
         }
     }
 }

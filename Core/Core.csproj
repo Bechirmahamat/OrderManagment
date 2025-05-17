@@ -11,15 +11,19 @@
     <Folder Include="Features\AuthManagement\Commands\Update\" />
     <Folder Include="Features\AuthManagement\Queries\GetAll\" />
     <Folder Include="Features\AuthManagement\Queries\GetById\" />
-    <Folder Include="Features\CategoryManagement\Queries\GetAll\" />
-    <Folder Include="Features\CategoryManagement\Queries\GetById\" />
-    <Folder Include="Features\CompanyManagement\" />
-    <Folder Include="Features\ProductManagement\" />
-    <Folder Include="Features\OrderManagement\" />
+    <Folder Include="Features\CompanyManagement\Commands\Update\" />
+    <Folder Include="Features\OrderManagement\Commands\Delete\" />
+    <Folder Include="Features\OrderManagement\Commands\Update\" />
+    <Folder Include="Features\OrderManagement\Queries\GetAll\" />
+    <Folder Include="Features\OrderManagement\Queries\GetById\" />
+    <Folder Include="Features\ProductManagement\Commands\Delete\" />
+    <Folder Include="Features\ProductManagement\Commands\Update\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />

@@ -1,0 +1,64 @@
+2025-05-12 21:59:21.693 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-12 21:59:21.816 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-12 21:59:21.822 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-12 21:59:21.842 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-12 21:59:22.033 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-12 21:59:22.035 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-12 21:59:22.117 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-12 21:59:22.120 +03:00 [INF] Hosting environment: Development
+2025-05-12 21:59:22.122 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-12 21:59:22.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-12 21:59:22.754 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 190.3706ms
+2025-05-12 21:59:22.781 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-12 21:59:22.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 11.4744ms
+2025-05-12 21:59:22.818 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-12 21:59:22.865 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.448ms
+2025-05-12 21:59:22.957 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-12 21:59:22.973 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.5847ms
+2025-05-12 22:26:37.546 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-12 22:26:37.631 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-12 22:26:37.636 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-12 22:26:37.649 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-12 22:26:37.818 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-12 22:26:37.823 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-12 22:26:37.883 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-12 22:26:37.887 +03:00 [INF] Hosting environment: Development
+2025-05-12 22:26:37.894 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-12 22:26:39.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-12 22:26:39.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 183.9618ms
+2025-05-12 22:26:39.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-12 22:26:39.246 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 13.3141ms
+2025-05-12 22:26:39.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-12 22:26:39.382 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.1122ms
+2025-05-12 22:26:39.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-12 22:26:39.579 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.531ms
+2025-05-12 22:26:44.489 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/api/Company - null null
+2025-05-12 22:26:44.562 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-12 22:26:44.580 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-12 22:26:44.586 +03:00 [INF] HTTP GET /api/Company responded 401 in 87.2611 ms
+2025-05-12 22:26:44.598 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/api/Company - 401 null application/json; charset=utf-8 109.2062ms
+2025-05-12 22:26:49.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/api/Company - null null
+2025-05-12 22:26:49.116 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-12 22:26:49.120 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-12 22:26:49.121 +03:00 [INF] HTTP GET /api/Company responded 401 in 9.5496 ms
+2025-05-12 22:26:49.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/api/Company - 401 null application/json; charset=utf-8 23.8491ms

@@ -7,5 +7,6 @@
         Task<IEnumerable<T>> GetAll();
         Task<bool> Update(T entity);
         Task<bool> Delete(Guid id);
+        Task<List<T>> GetByIds(IEnumerable<Guid> ids);
     }
 }

@@ -9,7 +9,7 @@ namespace Infrastructure.Configurations
         {
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-            string[] roleNames = { "ADMIN", "USER" };
+            string[] roleNames = { "ADMIN", "USER", "MANAGER" };
 
             foreach (var roleName in roleNames)
             {

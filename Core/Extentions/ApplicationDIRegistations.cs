@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Core.Extentions
@@ -9,7 +10,7 @@ namespace Core.Extentions
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
-
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             return services;
         }
     }

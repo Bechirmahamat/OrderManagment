@@ -10,13 +10,12 @@ namespace Persistence.Repositories
     public class AuthRepository : IAuthRepository
     {
         private readonly UserManager<ApplicationUser> userManager;
-        private readonly SignInManager<ApplicationUser> signInManager;
         private readonly ILogger<AuthRepository> logger;
 
-        public AuthRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ILogger<AuthRepository> logger)
+        public AuthRepository(UserManager<ApplicationUser> userManager, ILogger<AuthRepository> logger)
         {
             this.userManager = userManager;
-            this.signInManager = signInManager;
+
             this.logger = logger;
         }
         public async Task<User?> Login(string email, string password)
@@ -29,17 +28,18 @@ namespace Persistence.Repositories
                 {
                     return new User();
                 }
-                var result = await signInManager.PasswordSignInAsync(user.UserName, password, false, false);
+                var result = await userManager.CheckPasswordAsync(user, password);
 
-                if (result.Succeeded)
+                if (result)
                 {
-                    return (new User
+                    return new User
                     {
                         Id = user.Id,
                         FirstName = user.FirstName,
                         LastName = user.LastName,
-                        Email = user.Email
-                    });
+                        Email = user.Email ?? user.UserName
+                    };
+
                 }
                 else
                 {
@@ -73,6 +73,12 @@ namespace Persistence.Repositories
                 {
                     // ✅ Add role
                     var roleResult = await userManager.AddToRoleAsync(applicationUser, "User");
+
+                    if (user.Email == "admin@gmail.com")
+                    {
+                        roleResult = await userManager.AddToRoleAsync(applicationUser, "Admin");
+
+                    }
                     if (!roleResult.Succeeded)
                     {
                         logger.LogWarning("Role assignment failed: {Errors}", string.Join(", ", roleResult.Errors.Select(e => e.Description)));
@@ -149,6 +155,38 @@ namespace Persistence.Repositories
                 return null;
             }
 
+        }
+        public async Task<User?> GetUserById(string id)
+        {
+            try
+            {
+                var user = await userManager.Users.FirstOrDefaultAsync(x => x.Id == id);
+                if (user == null) return null;
+                return new User { Email = user.Email, FirstName = user.FirstName, LastName = user.LastName, Id = user.Id };
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error logging in user");
+                return null;
+            }
+        }
+        public async Task<bool> AddUserRole(string userId, string role)
+        {
+            try
+            {
+                var user = await userManager.Users.FirstOrDefaultAsync(x => x.Id == userId);
+                if (user != null)
+                {
+                    var result = await userManager.AddToRoleAsync(user, role);
+                    return result.Succeeded;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error adding user role");
+                return false;
+            }
         }
         public Task<bool> ChangePassword(string oldPassword, string newPassword)
         {

@@ -1,0 +1,284 @@
+2025-05-17 23:18:33.282 +03:00 [INF] Executed DbCommand (86ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:18:33.384 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:18:33.395 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:18:33.417 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-17 23:18:33.669 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-17 23:18:33.670 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-17 23:18:33.879 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 23:18:33.882 +03:00 [INF] Hosting environment: Development
+2025-05-17 23:18:33.884 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-17 23:18:34.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:18:34.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 237.4669ms
+2025-05-17 23:18:34.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:18:34.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 13.026ms
+2025-05-17 23:18:34.590 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:18:34.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.5293ms
+2025-05-17 23:18:34.784 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:18:34.805 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.4133ms
+2025-05-17 23:18:45.941 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7231/api/Authentication/login - application/json 59
+2025-05-17 23:18:46.083 +03:00 [INF] Executing endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-17 23:18:46.137 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Api.Dtos.LoginRequest) on controller Api.Controllers.AuthenticationController (Api).
+2025-05-17 23:18:46.393 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-17 23:18:46.514 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-17 23:18:46.764 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__user_Email_0
+2025-05-17 23:18:46.859 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-17 23:18:46.947 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-05-17 23:18:46.982 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-17 23:18:47.014 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-17 23:18:47.261 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@p19='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p20='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TokenCreated] = @p16, [TwoFactorEnabled] = @p17, [UserName] = @p18
+OUTPUT 1
+WHERE [Id] = @p19 AND [ConcurrencyStamp] = @p20;
+2025-05-17 23:18:47.311 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-17 23:18:47.341 +03:00 [INF] Executed action Api.Controllers.AuthenticationController.Login (Api) in 1192.0268ms
+2025-05-17 23:18:47.351 +03:00 [INF] Executed endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-17 23:18:47.362 +03:00 [INF] HTTP POST /api/Authentication/login responded 200 in 1405.0408 ms
+2025-05-17 23:18:47.380 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7231/api/Authentication/login - 200 null application/json; charset=utf-8 1439.2781ms
+2025-05-17 23:19:05.984 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - null 0
+2025-05-17 23:19:06.078 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:19:06.094 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequest) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:19:06.112 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-17 23:19:06.158 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 61.3123ms
+2025-05-17 23:19:06.163 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:19:06.167 +03:00 [INF] HTTP POST /api/Product responded 400 in 174.5771 ms
+2025-05-17 23:19:06.171 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/problem+json; charset=utf-8 187.1963ms
+2025-05-17 23:20:24.720 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - null 0
+2025-05-17 23:20:24.741 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:20:24.746 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequest) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:20:24.757 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-17 23:20:24.760 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 5.2203ms
+2025-05-17 23:20:24.776 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:20:24.801 +03:00 [INF] HTTP POST /api/Product responded 400 in 68.5891 ms
+2025-05-17 23:20:24.806 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/problem+json; charset=utf-8 86.6639ms
+2025-05-17 23:25:57.155 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:25:57.172 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 18.098ms
+2025-05-17 23:25:57.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:25:57.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:25:57.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 15.4239ms
+2025-05-17 23:25:57.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.5916ms
+2025-05-17 23:25:57.737 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:25:57.751 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Product" for actions - Api.Controllers.ProductController.Create (Api),Api.Controllers.ProductController.Create (Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-17 23:25:57.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/favicon-32x32.png - null null
+2025-05-17 23:25:57.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 44.3832ms
+2025-05-17 23:25:57.788 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-17 23:25:57.790 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/favicon-32x32.png - 200 628 image/png 35.6086ms
+2025-05-17 23:26:17.876 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:26:17.980 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:26:17.989 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:26:18.012 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-17 23:26:18.212 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-17 23:26:18.214 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-17 23:26:18.300 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 23:26:18.304 +03:00 [INF] Hosting environment: Development
+2025-05-17 23:26:18.307 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-17 23:26:18.829 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:26:19.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 196.2024ms
+2025-05-17 23:26:19.040 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:26:19.060 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 19.484ms
+2025-05-17 23:26:19.078 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:26:19.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.7951ms
+2025-05-17 23:26:19.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:26:19.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.683ms
+2025-05-17 23:26:23.459 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - null 0
+2025-05-17 23:26:23.697 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:26:23.748 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:26:23.807 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-17 23:26:23.870 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 103.094ms
+2025-05-17 23:26:23.878 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:26:23.886 +03:00 [INF] HTTP POST /api/Product responded 400 in 405.2057 ms
+2025-05-17 23:26:23.898 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/problem+json; charset=utf-8 439.7493ms
+2025-05-17 23:26:35.380 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------720844144912824644057463 296
+2025-05-17 23:26:35.399 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:26:35.404 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:26:35.699 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+WHERE [p].[Id] = @__get_Item_0
+2025-05-17 23:26:35.714 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-17 23:26:35.729 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 317.6835ms
+2025-05-17 23:26:35.733 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:26:35.737 +03:00 [INF] HTTP POST /api/Product responded 400 in 344.2248 ms
+2025-05-17 23:26:35.751 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/json; charset=utf-8 370.5382ms
+2025-05-17 23:28:47.996 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:28:48.081 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:28:48.089 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:28:48.114 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-17 23:28:48.352 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-17 23:28:48.355 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-17 23:28:48.421 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 23:28:48.423 +03:00 [INF] Hosting environment: Development
+2025-05-17 23:28:48.425 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-17 23:28:48.906 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:28:49.105 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 207.9733ms
+2025-05-17 23:28:49.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:28:49.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:28:49.233 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 26.6567ms
+2025-05-17 23:28:49.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.7792ms
+2025-05-17 23:28:49.369 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:28:49.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.6344ms
+2025-05-17 23:28:52.062 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------352010848181841487907164 296
+2025-05-17 23:28:52.228 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:28:52.249 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:28:52.381 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+WHERE [p].[Id] = @__get_Item_0
+2025-05-17 23:28:52.391 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-17 23:28:52.408 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 151.4421ms
+2025-05-17 23:28:52.411 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:28:52.419 +03:00 [INF] HTTP POST /api/Product responded 400 in 336.2425 ms
+2025-05-17 23:28:52.430 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/json; charset=utf-8 368.5453ms
+2025-05-17 23:29:27.711 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:29:27.746 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 35.0274ms
+2025-05-17 23:29:27.773 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:29:27.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:29:27.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 11.7664ms
+2025-05-17 23:29:27.804 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.1539ms
+2025-05-17 23:29:27.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:29:27.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.0966ms
+2025-05-17 23:29:30.568 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------305574590013014798653522 296
+2025-05-17 23:29:30.578 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:29:30.584 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:29:30.593 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-17 23:29:30.608 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 18.2931ms
+2025-05-17 23:29:30.610 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:29:30.612 +03:00 [INF] HTTP POST /api/Product responded 415 in 36.0468 ms
+2025-05-17 23:29:30.614 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 415 null application/problem+json; charset=utf-8 46.1779ms
+2025-05-17 23:29:41.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:29:41.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 11.5676ms
+2025-05-17 23:29:41.297 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:29:41.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:29:41.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 6.8534ms
+2025-05-17 23:29:41.315 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.808ms
+2025-05-17 23:29:41.463 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:29:41.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.3225ms
+2025-05-17 23:29:45.388 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------963719791816423905706871 296
+2025-05-17 23:29:45.395 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:29:45.402 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:29:45.408 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-17 23:29:45.413 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 6.5341ms
+2025-05-17 23:29:45.415 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:29:45.418 +03:00 [INF] HTTP POST /api/Product responded 415 in 26.0018 ms
+2025-05-17 23:29:45.422 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 415 null application/problem+json; charset=utf-8 34.4937ms
+2025-05-17 23:30:11.982 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:30:11.989 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 6.8726ms
+2025-05-17 23:30:12.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:30:12.039 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:30:12.047 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 8.1375ms
+2025-05-17 23:30:12.051 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.0575ms
+2025-05-17 23:30:12.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:30:12.258 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6935ms
+2025-05-17 23:30:32.132 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------977145494323373728932554 296
+2025-05-17 23:30:32.143 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Get (Api)'
+2025-05-17 23:30:32.154 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:30:32.223 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CompanyId], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[StockCount], [p].[UpdatedAt]
+FROM [Products] AS [p]
+2025-05-17 23:30:32.236 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-17 23:30:32.271 +03:00 [INF] Executed action Api.Controllers.ProductController.Get (Api) in 108.8161ms
+2025-05-17 23:30:32.274 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Get (Api)'
+2025-05-17 23:30:32.278 +03:00 [INF] HTTP GET /api/Product responded 200 in 137.0924 ms
+2025-05-17 23:30:32.285 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Product - 200 null application/json; charset=utf-8 153.1975ms
+2025-05-17 23:30:39.555 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------791875713689120404276935 296
+2025-05-17 23:30:39.565 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:30:39.568 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:30:39.573 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-17 23:30:39.586 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 14.4119ms
+2025-05-17 23:30:39.589 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:30:39.593 +03:00 [INF] HTTP POST /api/Product responded 415 in 29.8763 ms
+2025-05-17 23:30:39.599 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 415 null application/problem+json; charset=utf-8 43.4626ms
+2025-05-17 23:30:47.868 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------890773966012254701195054 296
+2025-05-17 23:30:47.874 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:30:47.876 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).
+2025-05-17 23:30:47.878 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-17 23:30:47.879 +03:00 [INF] Executed action Api.Controllers.ProductController.Create (Api) in 1.6912ms
+2025-05-17 23:30:47.881 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Create (Api)'
+2025-05-17 23:30:47.882 +03:00 [INF] HTTP POST /api/Product responded 415 in 8.9626 ms
+2025-05-17 23:30:47.884 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 415 null application/problem+json; charset=utf-8 15.6533ms
+2025-05-17 23:30:56.054 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:30:56.142 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:30:56.155 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-17 23:30:56.179 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-17 23:30:56.394 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-17 23:30:56.398 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-17 23:30:56.493 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-17 23:30:56.494 +03:00 [INF] Hosting environment: Development
+2025-05-17 23:30:56.496 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-17 23:30:56.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-17 23:30:57.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 204.8945ms
+2025-05-17 23:30:57.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-17 23:30:57.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 13.1896ms
+2025-05-17 23:30:57.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-17 23:30:57.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7385ms
+2025-05-17 23:30:57.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-17 23:30:57.285 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.0987ms
+2025-05-17 23:31:16.026 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------252502255190623456257890 296
+2025-05-17 23:31:16.121 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-17 23:31:16.143 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(Api.Dtos.CreateProductRequestDto) on controller Api.Controllers.ProductController (Api).

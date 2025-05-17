@@ -19,54 +19,55 @@ namespace Persistence.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            // Company - Manager (User)
-            modelBuilder.Entity<Company>()
-                .HasOne(c => c.Manager)
-                .WithMany() // Assuming a user can manage many companies, you can change this to WithOne() if only one
-                .HasForeignKey(c => c.ManagerId)
-                .OnDelete(DeleteBehavior.Restrict);
 
-            // Company - Products
-            modelBuilder.Entity<Company>()
-                .HasMany(c => c.Products)
-                .WithOne(p => p.Company)
-                .HasForeignKey(p => p.CompanyId)
-                .OnDelete(DeleteBehavior.Cascade);
 
-            // Company - Orders (via OrderItems)
-            modelBuilder.Entity<Company>()
-                .HasMany(c => c.Orders)
-                .WithOne(oi => oi.Company)
-                .HasForeignKey(oi => oi.CompanyId)
-                .OnDelete(DeleteBehavior.Restrict);
 
-            // Order - User
-            modelBuilder.Entity<Order>()
-                .HasOne(o => o.User)
-                .WithMany() // Add .WithMany(u => u.Orders) if User has Orders
-                .HasForeignKey(o => o.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Company>(c =>
+            {
+                c.HasOne<ApplicationUser>()
+                 .WithMany()
+                 .HasForeignKey(x => x.ManagerId)
+                 .HasPrincipalKey(x => x.Id)
+                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Order - OrderItems
-            modelBuilder.Entity<Order>()
-                .HasMany(o => o.OrderItems)
-                .WithOne(oi => oi.Order)
-                .HasForeignKey(oi => oi.OrderId)
-                .OnDelete(DeleteBehavior.Cascade);
+                c.HasMany(x => x.Products)
+                 .WithOne(p => p.Company)
+                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Product - OrderItems
-            modelBuilder.Entity<Product>()
-                .HasMany<OrderItem>()
-                .WithOne(oi => oi.Product)
-                .HasForeignKey(oi => oi.ProductId)
-                .OnDelete(DeleteBehavior.Restrict);
+                c.HasMany(x => x.Orders)
+                 .WithOne(o => o.Company)
+                 .HasForeignKey(o => o.CompanyId)  // Explicit FK
+                 .OnDelete(DeleteBehavior.Restrict);
+            });
 
-            // ProductCategory - Products
-            modelBuilder.Entity<ProductCategory>()
-                .HasMany(pc => pc.Products)
-                .WithOne(p => p.Category)
-                .HasForeignKey(p => p.CategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Order>(o =>
+            {
+                o.HasOne<ApplicationUser>()
+                 .WithMany()
+                 .HasForeignKey(o => o.UserId)
+                 .HasPrincipalKey(u => u.Id)
+                 .OnDelete(DeleteBehavior.Restrict);
+
+                o.HasOne(o => o.Company)
+                 .WithMany(c => c.Orders)
+                 .HasForeignKey(o => o.CompanyId)
+                 .OnDelete(DeleteBehavior.Restrict);
+
+                o.HasMany(o => o.OrderItems)
+                 .WithOne(oi => oi.Order)
+                 .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Product>(p =>
+            {
+                p.HasOne(p => p.Company)
+                 .WithMany(c => c.Products)
+                 .OnDelete(DeleteBehavior.Cascade);
+
+                p.HasOne(p => p.Category)
+                 .WithMany(pc => pc.Products)
+                 .OnDelete(DeleteBehavior.Restrict);
+            });
         }
 
     }

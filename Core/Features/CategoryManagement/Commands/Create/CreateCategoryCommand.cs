@@ -1,6 +1,9 @@
-﻿namespace Core.Features.CategoryManagement.Commands.Create
+﻿using Core.Responses;
+using MediatR;
+
+namespace Core.Features.CategoryManagement.Commands.Create
 {
-    internal class DeleteCategoryCommand
+    public record CreateCategoryCommand(string Name, string Desciption) : IRequest<GenericResponse>
     {
     }
 }

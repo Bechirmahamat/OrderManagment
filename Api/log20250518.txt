@@ -1,0 +1,125 @@
+2025-05-18 00:24:41.936 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-18 00:24:42.118 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-18 00:24:42.127 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-18 00:24:42.148 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-18 00:24:42.399 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-18 00:24:42.401 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-18 00:24:42.524 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-18 00:24:42.526 +03:00 [INF] Hosting environment: Development
+2025-05-18 00:24:42.527 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-18 00:24:43.119 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-18 00:24:43.380 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 273.0445ms
+2025-05-18 00:24:43.409 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-18 00:24:43.421 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 11.9596ms
+2025-05-18 00:24:43.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-18 00:24:43.508 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.6819ms
+2025-05-18 00:24:43.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-18 00:24:43.651 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.6228ms
+2025-05-18 00:25:02.558 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7231/api/Authentication/login - application/json 59
+2025-05-18 00:25:02.733 +03:00 [INF] Executing endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-18 00:25:02.797 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Api.Dtos.LoginRequest) on controller Api.Controllers.AuthenticationController (Api).
+2025-05-18 00:25:03.125 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-18 00:25:03.311 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-18 00:25:03.615 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__user_Email_0
+2025-05-18 00:25:03.764 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-18 00:25:03.864 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-05-18 00:25:03.907 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-18 00:25:03.946 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-18 00:25:04.252 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@p19='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p20='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TokenCreated] = @p16, [TwoFactorEnabled] = @p17, [UserName] = @p18
+OUTPUT 1
+WHERE [Id] = @p19 AND [ConcurrencyStamp] = @p20;
+2025-05-18 00:25:04.317 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-18 00:25:04.354 +03:00 [INF] Executed action Api.Controllers.AuthenticationController.Login (Api) in 1540.9128ms
+2025-05-18 00:25:04.361 +03:00 [INF] Executed endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-18 00:25:04.372 +03:00 [INF] HTTP POST /api/Authentication/login responded 200 in 1785.0734 ms
+2025-05-18 00:25:04.393 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7231/api/Authentication/login - 200 null application/json; charset=utf-8 1834.8524ms
+2025-05-18 00:25:28.894 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------948234713591106937396341 296
+2025-05-18 00:25:29.016 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:25:29.048 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(Api.Dtos.CreateProductRequest) on controller Api.Controllers.ProductController (Api).
+2025-05-18 00:25:29.104 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-18 00:25:29.156 +03:00 [INF] Executed action Api.Controllers.ProductController.CreateProduct (Api) in 101.3561ms
+2025-05-18 00:25:29.159 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:25:29.161 +03:00 [INF] HTTP POST /api/Product responded 400 in 260.6582 ms
+2025-05-18 00:25:29.166 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/problem+json; charset=utf-8 272.5475ms
+2025-05-18 00:25:37.514 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------939039090351803025151734 407
+2025-05-18 00:25:37.529 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:25:37.536 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(Api.Dtos.CreateProductRequest) on controller Api.Controllers.ProductController (Api).
+2025-05-18 00:25:37.744 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-18 00:25:37.749 +03:00 [INF] Executed action Api.Controllers.ProductController.CreateProduct (Api) in 199.391ms
+2025-05-18 00:25:37.751 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:25:37.752 +03:00 [INF] HTTP POST /api/Product responded 400 in 231.7784 ms
+2025-05-18 00:25:37.756 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/json; charset=utf-8 241.7264ms
+2025-05-18 00:26:05.422 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------204393372607792693124544 656
+2025-05-18 00:26:05.432 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:26:05.433 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(Api.Dtos.CreateProductRequest) on controller Api.Controllers.ProductController (Api).
+2025-05-18 00:26:05.449 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-18 00:26:05.453 +03:00 [INF] Executed action Api.Controllers.ProductController.CreateProduct (Api) in 16.4939ms
+2025-05-18 00:26:05.457 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:26:05.459 +03:00 [INF] HTTP POST /api/Product responded 400 in 30.1227 ms
+2025-05-18 00:26:05.462 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 400 null application/json; charset=utf-8 40.4659ms
+2025-05-18 00:26:11.628 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------599905998440450924336082 658
+2025-05-18 00:26:11.638 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:26:11.640 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(Api.Dtos.CreateProductRequest) on controller Api.Controllers.ProductController (Api).
+2025-05-18 00:26:11.747 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+WHERE [p].[Id] = @__get_Item_0
+2025-05-18 00:26:11.834 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__managerId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+WHERE [c].[ManagerId] = @__managerId_0
+2025-05-18 00:26:12.141 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Double), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [CategoryId], [CompanyId], [CreatedAt], [Description], [Name], [Price], [StockCount], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-05-18 00:26:12.148 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-18 00:26:12.152 +03:00 [INF] Executed action Api.Controllers.ProductController.CreateProduct (Api) in 509.2366ms
+2025-05-18 00:26:12.155 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.CreateProduct (Api)'
+2025-05-18 00:26:12.156 +03:00 [INF] HTTP POST /api/Product responded 200 in 518.8630 ms
+2025-05-18 00:26:12.160 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Product - 200 null application/json; charset=utf-8 531.8985ms
+2025-05-18 00:26:17.996 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Product - multipart/form-data; boundary=--------------------------010932196700765479514420 658
+2025-05-18 00:26:18.008 +03:00 [INF] Executing endpoint 'Api.Controllers.ProductController.Get (Api)'
+2025-05-18 00:26:18.020 +03:00 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Api.Controllers.ProductController (Api).
+2025-05-18 00:26:18.058 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[CompanyId], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[StockCount], [p].[UpdatedAt]
+FROM [Products] AS [p]
+2025-05-18 00:26:18.064 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-18 00:26:18.117 +03:00 [INF] Executed action Api.Controllers.ProductController.Get (Api) in 92.7672ms
+2025-05-18 00:26:18.121 +03:00 [INF] Executed endpoint 'Api.Controllers.ProductController.Get (Api)'
+2025-05-18 00:26:18.122 +03:00 [INF] HTTP GET /api/Product responded 200 in 118.0907 ms
+2025-05-18 00:26:18.128 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Product - 200 null application/json; charset=utf-8 132.3231ms

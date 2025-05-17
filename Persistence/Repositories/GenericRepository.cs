@@ -1,25 +1,25 @@
 ﻿using Core.Interface;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Persistence.Data;
 
 namespace Persistence.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         private readonly AppDbContext context;
-        private readonly ILogger<GenericRepository<T>> logger;
+        protected readonly ILogger<GenericRepository<T>> logger;
         protected readonly DbSet<T> dbSet;
-
-
 
         public GenericRepository(AppDbContext context, ILogger<GenericRepository<T>> logger)
         {
             this.context = context;
             this.logger = logger;
             dbSet = context.Set<T>();
-
         }
+
         public virtual async Task<bool> Create(T entity)
         {
             try
@@ -49,7 +49,7 @@ namespace Persistence.Repositories
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error creating entity");
+                logger.LogError(ex, "Error deleting entity");
                 return false;
             }
         }
@@ -62,7 +62,7 @@ namespace Persistence.Repositories
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error creating entity");
+                logger.LogError(ex, "Error retrieving entities");
                 return null;
             }
         }
@@ -75,9 +75,16 @@ namespace Persistence.Repositories
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error creating entity");
+                logger.LogError(ex, "Error retrieving entity");
                 return null;
             }
+        }
+
+        public async Task<List<T>> GetByIds(IEnumerable<Guid> ids)
+        {
+            return await dbSet
+                .Where(e => ids.Contains(e.Id))
+                .ToListAsync();
         }
 
         public virtual Task<bool> Update(T entity)
@@ -89,7 +96,7 @@ namespace Persistence.Repositories
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error creating entity");
+                logger.LogError(ex, "Error updating entity");
                 return Task.FromResult(false);
             }
         }

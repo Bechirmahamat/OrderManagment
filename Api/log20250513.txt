@@ -1,0 +1,697 @@
+2025-05-13 12:01:45.460 +03:00 [INF] Executed DbCommand (65ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:01:45.586 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:01:45.591 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:01:45.614 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 12:01:45.925 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 12:01:45.927 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 12:01:46.035 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 12:01:46.038 +03:00 [INF] Hosting environment: Development
+2025-05-13 12:01:46.040 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 12:01:46.637 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 12:01:46.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 279.4598ms
+2025-05-13 12:01:46.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 12:01:46.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 11.6026ms
+2025-05-13 12:01:46.978 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 12:01:47.069 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.0537ms
+2025-05-13 12:01:47.184 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 12:01:47.242 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Company" for actions - Api.Controllers.CompanyController.Get (Api),Api.Controllers.CompanyController.GetAll (Api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-13 12:01:47.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 66.42ms
+2025-05-13 12:03:59.395 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:03:59.481 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:03:59.488 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:03:59.505 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 12:03:59.631 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 12:03:59.633 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 12:03:59.732 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 12:03:59.734 +03:00 [INF] Hosting environment: Development
+2025-05-13 12:03:59.736 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 12:04:00.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 12:04:00.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 260.7344ms
+2025-05-13 12:04:00.356 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 12:04:00.368 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 11.9482ms
+2025-05-13 12:04:00.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 12:04:00.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.3781ms
+2025-05-13 12:04:00.557 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 12:04:00.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.8564ms
+2025-05-13 12:04:19.218 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7231/api/Authentication/login - application/json 57
+2025-05-13 12:04:19.348 +03:00 [INF] Executing endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-13 12:04:19.408 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Api.Dtos.LoginRequest) on controller Api.Controllers.AuthenticationController (Api).
+2025-05-13 12:04:19.682 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-13 12:04:19.814 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-13 12:04:20.052 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__user_Email_0
+2025-05-13 12:04:20.159 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-13 12:04:20.252 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-05-13 12:04:20.286 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-13 12:04:20.319 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-13 12:04:20.542 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p19='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p20='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TokenCreated] = @p16, [TwoFactorEnabled] = @p17, [UserName] = @p18
+OUTPUT 1
+WHERE [Id] = @p19 AND [ConcurrencyStamp] = @p20;
+2025-05-13 12:04:20.588 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:04:20.617 +03:00 [INF] Executed action Api.Controllers.AuthenticationController.Login (Api) in 1190.3905ms
+2025-05-13 12:04:20.624 +03:00 [INF] Executed endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-13 12:04:20.636 +03:00 [INF] HTTP POST /api/Authentication/login responded 200 in 1395.2393 ms
+2025-05-13 12:04:20.655 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7231/api/Authentication/login - 200 null application/json; charset=utf-8 1437.0684ms
+2025-05-13 12:05:48.539 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Company - multipart/form-data; boundary=--------------------------228187702980480340934090 457
+2025-05-13 12:05:48.636 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/12/2025 6:10:56 PM', Current time (UTC): '5/13/2025 9:05:48 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 12:05:48.712 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/12/2025 6:10:56 PM', Current time (UTC): '5/13/2025 9:05:48 AM'.
+2025-05-13 12:05:48.725 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+2025-05-13 12:05:48.742 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 12:05:48.747 +03:00 [INF] HTTP POST /api/Company responded 401 in 196.6034 ms
+2025-05-13 12:05:48.756 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Company - 401 null application/json; charset=utf-8 217.25ms
+2025-05-13 12:05:54.709 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Company - multipart/form-data; boundary=--------------------------253244369933413333342650 457
+2025-05-13 12:05:54.732 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+2025-05-13 12:05:54.745 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-05-13 12:05:54.746 +03:00 [INF] HTTP POST /api/Company responded 403 in 34.2343 ms
+2025-05-13 12:05:54.749 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Company - 403 null application/json; charset=utf-8 39.8056ms
+2025-05-13 12:06:04.839 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company - null null
+2025-05-13 12:06:04.852 +03:00 [INF] Executing endpoint 'Api.Controllers.CompanyController.Get (Api)'
+2025-05-13 12:06:04.889 +03:00 [INF] Route matched with {action = "Get", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Api.Controllers.CompanyController (Api).
+2025-05-13 12:06:04.947 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+2025-05-13 12:06:05.012 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:06:05.054 +03:00 [INF] Executed action Api.Controllers.CompanyController.Get (Api) in 160.8039ms
+2025-05-13 12:06:05.058 +03:00 [INF] Executed endpoint 'Api.Controllers.CompanyController.Get (Api)'
+2025-05-13 12:06:05.060 +03:00 [INF] HTTP GET /api/Company responded 200 in 212.2408 ms
+2025-05-13 12:06:05.063 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company - 200 null application/json; charset=utf-8 223.6066ms
+2025-05-13 12:12:58.655 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - null 0
+2025-05-13 12:12:58.660 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/11/2025 6:57:22 PM', Current time (UTC): '5/13/2025 9:12:58 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 12:12:58.668 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/11/2025 6:57:22 PM', Current time (UTC): '5/13/2025 9:12:58 AM'.
+2025-05-13 12:12:58.671 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:12:58.679 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:12:58.729 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-13 12:12:58.744 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 55.3571ms
+2025-05-13 12:12:58.755 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:12:58.950 +03:00 [ERR] HTTP POST /api/Category responded 500 in 291.3830 ms
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Api.Middlewares.ExceptionHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Enoca\source\repos\OrderManagment\Api\Middlewares\ExceptionHandlerMiddleware.cs:line 27
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-13 12:12:58.991 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Api.Middlewares.ExceptionHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Enoca\source\repos\OrderManagment\Api\Middlewares\ExceptionHandlerMiddleware.cs:line 27
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-13 12:12:59.003 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2025-05-13 12:12:59.008 +03:00 [ERR] Connection id "0HNCHVKCPJFC0", Request id "0HNCHVKCPJFC0:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Api.Middlewares.ExceptionHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Enoca\source\repos\OrderManagment\Api\Middlewares\ExceptionHandlerMiddleware.cs:line 27
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-13 12:12:59.043 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 401 null application/json; charset=utf-8 388.984ms
+2025-05-13 12:13:04.520 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - null 0
+2025-05-13 12:13:04.524 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-05-13 12:13:04.531 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-05-13 12:13:04.533 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:13:04.536 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:13:04.538 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-13 12:13:04.542 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 4.1511ms
+2025-05-13 12:13:04.545 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:13:04.668 +03:00 [ERR] HTTP POST /api/Category responded 500 in 144.7850 ms
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Api.Middlewares.ExceptionHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Enoca\source\repos\OrderManagment\Api\Middlewares\ExceptionHandlerMiddleware.cs:line 27
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-05-13 12:13:04.676 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Api.Middlewares.ExceptionHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Enoca\source\repos\OrderManagment\Api\Middlewares\ExceptionHandlerMiddleware.cs:line 27
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-13 12:13:04.686 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2025-05-13 12:13:04.691 +03:00 [ERR] Connection id "0HNCHVKCPJFC2", Request id "0HNCHVKCPJFC2:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_ContentType(StringValues value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_ContentType(String value)
+   at Api.Middlewares.ExceptionHandlerMiddleware.Invoke(HttpContext context) in C:\Users\Enoca\source\repos\OrderManagment\Api\Middlewares\ExceptionHandlerMiddleware.cs:line 27
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-13 12:13:04.708 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 401 null application/json; charset=utf-8 187.8248ms
+2025-05-13 12:13:12.249 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - null 0
+2025-05-13 12:13:12.253 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:13:12.256 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:13:12.263 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-13 12:13:12.284 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 21.8532ms
+2025-05-13 12:13:12.286 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:13:12.290 +03:00 [INF] HTTP POST /api/Category responded 415 in 38.1542 ms
+2025-05-13 12:13:12.298 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 415 null application/problem+json; charset=utf-8 48.8947ms
+2025-05-13 12:14:11.965 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - application/json 65
+2025-05-13 12:14:11.986 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:14:11.988 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:14:12.035 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-13 12:14:12.048 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 56.0717ms
+2025-05-13 12:14:12.050 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:14:12.052 +03:00 [INF] HTTP POST /api/Category responded 400 in 66.5332 ms
+2025-05-13 12:14:12.055 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 400 null application/problem+json; charset=utf-8 91.5667ms
+2025-05-13 12:15:36.829 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:15:36.924 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:15:36.929 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:15:36.945 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 12:15:37.079 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 12:15:37.081 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 12:15:37.137 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 12:15:37.141 +03:00 [INF] Hosting environment: Development
+2025-05-13 12:15:37.142 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 12:15:37.798 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 12:15:37.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 178.1646ms
+2025-05-13 12:15:37.992 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 12:15:38.010 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 17.7557ms
+2025-05-13 12:15:38.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 12:15:38.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.9721ms
+2025-05-13 12:15:38.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 12:15:38.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.3416ms
+2025-05-13 12:15:44.244 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - application/json 65
+2025-05-13 12:15:44.412 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+2025-05-13 12:15:44.436 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-05-13 12:15:44.442 +03:00 [INF] HTTP POST /api/Category responded 403 in 172.8769 ms
+2025-05-13 12:15:44.448 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 403 null application/json; charset=utf-8 204.0868ms
+2025-05-13 12:16:00.427 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7231/api/Authentication/login - application/json 56
+2025-05-13 12:16:00.436 +03:00 [INF] Executing endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-13 12:16:00.459 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Api.Dtos.LoginRequest) on controller Api.Controllers.AuthenticationController (Api).
+2025-05-13 12:16:00.551 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-13 12:16:00.598 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-13 12:16:00.688 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__user_Email_0
+2025-05-13 12:16:00.731 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-13 12:16:00.752 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-05-13 12:16:00.767 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-13 12:16:00.781 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-13 12:16:00.862 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p19='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p20='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TokenCreated] = @p16, [TwoFactorEnabled] = @p17, [UserName] = @p18
+OUTPUT 1
+WHERE [Id] = @p19 AND [ConcurrencyStamp] = @p20;
+2025-05-13 12:16:00.882 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:16:00.893 +03:00 [INF] Executed action Api.Controllers.AuthenticationController.Login (Api) in 421.8163ms
+2025-05-13 12:16:00.896 +03:00 [INF] Executed endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-13 12:16:00.898 +03:00 [INF] HTTP POST /api/Authentication/login responded 200 in 466.4532 ms
+2025-05-13 12:16:00.906 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7231/api/Authentication/login - 200 null application/json; charset=utf-8 479.2038ms
+2025-05-13 12:16:16.882 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - application/json 65
+2025-05-13 12:16:16.896 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:16:16.939 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Api.Dtos.CategoryRequestDto) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:16:16.957 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-13 12:16:16.973 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 25.6753ms
+2025-05-13 12:16:16.976 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:16:16.978 +03:00 [INF] HTTP POST /api/Category responded 400 in 86.3895 ms
+2025-05-13 12:16:16.982 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 400 null application/problem+json; charset=utf-8 100.7708ms
+2025-05-13 12:17:03.462 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - multipart/form-data; boundary=--------------------------949462887407384350876826 296
+2025-05-13 12:17:03.469 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:17:03.475 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Api.Dtos.CategoryRequestDto) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:17:03.570 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:17:03.578 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 92.6336ms
+2025-05-13 12:17:03.581 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:17:03.583 +03:00 [INF] HTTP POST /api/Category responded 200 in 116.5360 ms
+2025-05-13 12:17:03.586 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 200 null application/json; charset=utf-8 123.7455ms
+2025-05-13 12:43:02.922 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:43:03.014 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:43:03.023 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:43:03.040 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 12:43:03.218 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 12:43:03.220 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 12:43:03.283 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 12:43:03.285 +03:00 [INF] Hosting environment: Development
+2025-05-13 12:43:03.287 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 12:43:03.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 12:43:03.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 209.7079ms
+2025-05-13 12:43:04.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 12:43:04.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 12:43:04.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 9.3727ms
+2025-05-13 12:43:04.103 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.834ms
+2025-05-13 12:43:04.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 12:43:04.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.5651ms
+2025-05-13 12:43:38.247 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category - null null
+2025-05-13 12:43:38.371 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-13 12:43:38.420 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 12:43:38.426 +03:00 [INF] HTTP GET /api/Category responded 401 in 157.4154 ms
+2025-05-13 12:43:38.437 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category - 401 null application/json; charset=utf-8 190.4955ms
+2025-05-13 12:43:51.639 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category - null null
+2025-05-13 12:43:51.758 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:31:00 AM', Current time (UTC): '5/13/2025 9:43:51 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 12:43:51.799 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:31:00 AM', Current time (UTC): '5/13/2025 9:43:51 AM'.
+2025-05-13 12:43:51.803 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-13 12:43:51.807 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 12:43:51.809 +03:00 [INF] HTTP GET /api/Category responded 401 in 152.0043 ms
+2025-05-13 12:43:51.814 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category - 401 null application/json; charset=utf-8 174.51ms
+2025-05-13 12:44:06.291 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7231/api/Authentication/login - application/json 56
+2025-05-13 12:44:06.301 +03:00 [INF] Executing endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-13 12:44:06.357 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Api.Dtos.LoginRequest) on controller Api.Controllers.AuthenticationController (Api).
+2025-05-13 12:44:06.605 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-13 12:44:06.698 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__email_0
+2025-05-13 12:44:06.922 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Email] = @__user_Email_0
+2025-05-13 12:44:07.064 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-13 12:44:07.115 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2025-05-13 12:44:07.152 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-13 12:44:07.187 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenExpiryTime], [a].[SecurityStamp], [a].[TokenCreated], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-05-13 12:44:07.415 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p19='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p20='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2), @p15='?' (Size = 4000), @p16='?' (DbType = DateTime2), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RefreshToken] = @p13, [RefreshTokenExpiryTime] = @p14, [SecurityStamp] = @p15, [TokenCreated] = @p16, [TwoFactorEnabled] = @p17, [UserName] = @p18
+OUTPUT 1
+WHERE [Id] = @p19 AND [ConcurrencyStamp] = @p20;
+2025-05-13 12:44:07.465 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:44:07.494 +03:00 [INF] Executed action Api.Controllers.AuthenticationController.Login (Api) in 1120.186ms
+2025-05-13 12:44:07.496 +03:00 [INF] Executed endpoint 'Api.Controllers.AuthenticationController.Login (Api)'
+2025-05-13 12:44:07.501 +03:00 [INF] HTTP POST /api/Authentication/login responded 200 in 1205.5987 ms
+2025-05-13 12:44:07.513 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7231/api/Authentication/login - 200 null application/json; charset=utf-8 1222.6136ms
+2025-05-13 12:44:19.205 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category - null null
+2025-05-13 12:44:19.235 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Get (Api)'
+2025-05-13 12:44:19.248 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:44:19.312 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+2025-05-13 12:44:19.323 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:44:19.363 +03:00 [INF] Executed action Api.Controllers.CategoryController.Get (Api) in 108.2452ms
+2025-05-13 12:44:19.367 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Get (Api)'
+2025-05-13 12:44:19.370 +03:00 [INF] HTTP GET /api/Category responded 200 in 158.1113 ms
+2025-05-13 12:44:19.377 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category - 200 null application/json; charset=utf-8 172.109ms
+2025-05-13 12:45:46.084 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:45:46.166 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:45:46.174 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:45:46.190 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 12:45:46.345 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 12:45:46.347 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 12:45:46.412 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 12:45:46.414 +03:00 [INF] Hosting environment: Development
+2025-05-13 12:45:46.416 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 12:45:46.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 12:45:47.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 177.2054ms
+2025-05-13 12:45:47.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 12:45:47.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 13.1044ms
+2025-05-13 12:45:47.131 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 12:45:47.181 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.3206ms
+2025-05-13 12:45:47.265 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 12:45:47.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.9509ms
+2025-05-13 12:45:59.862 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - multipart/form-data; boundary=--------------------------294796850974921288176238 296
+2025-05-13 12:46:00.110 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:31:00 AM', Current time (UTC): '5/13/2025 9:46:00 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 12:46:00.187 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:31:00 AM', Current time (UTC): '5/13/2025 9:46:00 AM'.
+2025-05-13 12:46:00.199 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+2025-05-13 12:46:00.215 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 12:46:00.222 +03:00 [INF] HTTP POST /api/Category responded 401 in 337.2515 ms
+2025-05-13 12:46:00.228 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 401 null application/json; charset=utf-8 365.9168ms
+2025-05-13 12:46:12.824 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7231/api/Category - multipart/form-data; boundary=--------------------------350467626998595273474572 296
+2025-05-13 12:46:12.867 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:46:12.918 +03:00 [INF] Route matched with {action = "Post", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Api.Dtos.CategoryRequestDto) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:46:13.354 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductCategories] ([Id], [CreatedAt], [Description], [Name], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-13 12:46:13.394 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:46:13.415 +03:00 [INF] Executed action Api.Controllers.CategoryController.Post (Api) in 487.2177ms
+2025-05-13 12:46:13.419 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Post (Api)'
+2025-05-13 12:46:13.427 +03:00 [INF] HTTP POST /api/Category responded 200 in 590.7238 ms
+2025-05-13 12:46:13.442 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7231/api/Category - 200 null application/json; charset=utf-8 617.4101ms
+2025-05-13 12:46:16.844 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category - null null
+2025-05-13 12:46:16.858 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.Get (Api)'
+2025-05-13 12:46:16.869 +03:00 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:46:16.925 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+2025-05-13 12:46:16.943 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:46:16.984 +03:00 [INF] Executed action Api.Controllers.CategoryController.Get (Api) in 108.1613ms
+2025-05-13 12:46:16.987 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.Get (Api)'
+2025-05-13 12:46:16.989 +03:00 [INF] HTTP GET /api/Category responded 200 in 135.1829 ms
+2025-05-13 12:46:16.995 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category - 200 null application/json; charset=utf-8 150.5789ms
+2025-05-13 12:47:11.384 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/catory/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - null null
+2025-05-13 12:47:11.394 +03:00 [INF] HTTP GET /api/catory/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 responded 404 in 0.8291 ms
+2025-05-13 12:47:11.402 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/catory/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - 404 0 null 18.561ms
+2025-05-13 12:47:11.447 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7231/api/catory/88b3c150-e7cc-4a91-c8b6-08dd9202ff87, Response status code: 404
+2025-05-13 12:47:26.628 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - null null
+2025-05-13 12:47:26.647 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.GetById (Api)'
+2025-05-13 12:47:26.688 +03:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:47:26.800 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+WHERE [c].[Id] = @__get_Item_0
+2025-05-13 12:47:26.804 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:47:26.806 +03:00 [INF] Executed action Api.Controllers.CategoryController.GetById (Api) in 114.8181ms
+2025-05-13 12:47:26.809 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.GetById (Api)'
+2025-05-13 12:47:26.811 +03:00 [INF] HTTP GET /api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 responded 400 in 164.1728 ms
+2025-05-13 12:47:26.815 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - 400 null application/json; charset=utf-8 186.6648ms
+2025-05-13 12:49:49.118 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:49:49.234 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:49:49.245 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 12:49:49.262 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 12:49:49.414 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 12:49:49.416 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 12:49:49.491 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 12:49:49.494 +03:00 [INF] Hosting environment: Development
+2025-05-13 12:49:49.496 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 12:49:49.674 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 12:49:49.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 182.5342ms
+2025-05-13 12:49:49.936 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 12:49:49.936 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 12:49:49.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 8.9367ms
+2025-05-13 12:49:49.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.2752ms
+2025-05-13 12:49:50.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 12:49:50.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5437ms
+2025-05-13 12:49:55.062 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - null null
+2025-05-13 12:49:55.138 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.GetById (Api)'
+2025-05-13 12:49:55.165 +03:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 12:49:55.259 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+WHERE [p].[Id] = @__get_Item_0
+2025-05-13 12:49:55.298 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:49:55.328 +03:00 [INF] Executed action Api.Controllers.CategoryController.GetById (Api) in 151.1777ms
+2025-05-13 12:49:55.334 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.GetById (Api)'
+2025-05-13 12:49:55.339 +03:00 [INF] HTTP GET /api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 responded 200 in 264.8157 ms
+2025-05-13 12:49:55.352 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - 200 null application/json; charset=utf-8 290.9625ms
+2025-05-13 12:51:19.650 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - null null
+2025-05-13 12:51:19.668 +03:00 [INF] Executing endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 12:51:19.676 +03:00 [INF] Route matched with {action = "GetById", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CompanyController (Api).
+2025-05-13 12:51:19.734 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+WHERE [c].[Id] = @__get_Item_0
+2025-05-13 12:51:19.743 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:51:19.747 +03:00 [INF] Executed action Api.Controllers.CompanyController.GetById (Api) in 66.1391ms
+2025-05-13 12:51:19.751 +03:00 [INF] Executed endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 12:51:19.753 +03:00 [INF] HTTP GET /api/Company/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 responded 400 in 86.3640 ms
+2025-05-13 12:51:19.757 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - 400 null application/json; charset=utf-8 106.9582ms
+2025-05-13 12:51:27.531 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company - null null
+2025-05-13 12:51:27.583 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:19:20 AM', Current time (UTC): '5/13/2025 9:51:27 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 12:51:27.614 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:19:20 AM', Current time (UTC): '5/13/2025 9:51:27 AM'.
+2025-05-13 12:51:27.619 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-13 12:51:27.629 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 12:51:27.632 +03:00 [INF] HTTP GET /api/Company responded 401 in 97.6083 ms
+2025-05-13 12:51:27.636 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company - 401 null application/json; charset=utf-8 105.4449ms
+2025-05-13 12:51:33.515 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company - null null
+2025-05-13 12:51:33.531 +03:00 [INF] Executing endpoint 'Api.Controllers.CompanyController.Get (Api)'
+2025-05-13 12:51:33.540 +03:00 [INF] Route matched with {action = "Get", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Api.Controllers.CompanyController (Api).
+2025-05-13 12:51:33.553 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+2025-05-13 12:51:33.568 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:51:33.577 +03:00 [INF] Executed action Api.Controllers.CompanyController.Get (Api) in 32.9094ms
+2025-05-13 12:51:33.579 +03:00 [INF] Executed endpoint 'Api.Controllers.CompanyController.Get (Api)'
+2025-05-13 12:51:33.581 +03:00 [INF] HTTP GET /api/Company responded 200 in 61.7404 ms
+2025-05-13 12:51:33.586 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company - 200 null application/json; charset=utf-8 70.377ms
+2025-05-13 12:51:46.210 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 - null null
+2025-05-13 12:51:46.213 +03:00 [INF] Executing endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 12:51:46.217 +03:00 [INF] Route matched with {action = "GetById", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CompanyController (Api).
+2025-05-13 12:51:46.224 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+WHERE [c].[Id] = @__get_Item_0
+2025-05-13 12:51:46.229 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 12:51:46.231 +03:00 [INF] Executed action Api.Controllers.CompanyController.GetById (Api) in 11.1119ms
+2025-05-13 12:51:46.235 +03:00 [INF] Executed endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 12:51:46.237 +03:00 [INF] HTTP GET /api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 responded 200 in 23.9971 ms
+2025-05-13 12:51:46.239 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 - 200 null application/json; charset=utf-8 29.3821ms
+2025-05-13 16:34:58.766 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 16:34:58.843 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 16:34:58.850 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-05-13 16:34:58.864 +03:00 [INF] User profile is available. Using 'C:\Users\Enoca\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 16:34:59.023 +03:00 [INF] Now listening on: https://localhost:7231
+2025-05-13 16:34:59.026 +03:00 [INF] Now listening on: http://localhost:5252
+2025-05-13 16:34:59.083 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 16:34:59.087 +03:00 [INF] Hosting environment: Development
+2025-05-13 16:34:59.089 +03:00 [INF] Content root path: C:\Users\Enoca\source\repos\OrderManagment\Api
+2025-05-13 16:34:59.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/index.html - null null
+2025-05-13 16:34:59.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/index.html - 200 null text/html;charset=utf-8 179.9837ms
+2025-05-13 16:34:59.620 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-13 16:34:59.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 9.8429ms
+2025-05-13 16:34:59.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/_vs/browserLink - null null
+2025-05-13 16:34:59.700 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.8841ms
+2025-05-13 16:34:59.804 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - null null
+2025-05-13 16:34:59.827 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.9219ms
+2025-05-13 16:35:35.983 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company - null null
+2025-05-13 16:35:36.104 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:59:07 AM', Current time (UTC): '5/13/2025 1:35:36 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 16:35:36.154 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:59:07 AM', Current time (UTC): '5/13/2025 1:35:36 PM'.
+2025-05-13 16:35:36.163 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-13 16:35:36.170 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 16:35:36.174 +03:00 [INF] HTTP GET /api/Company responded 401 in 177.6253 ms
+2025-05-13 16:35:36.180 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company - 401 null application/json; charset=utf-8 196.7569ms
+2025-05-13 16:35:43.390 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category - null null
+2025-05-13 16:35:43.409 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:59:07 AM', Current time (UTC): '5/13/2025 1:35:43 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-13 16:35:43.416 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '5/13/2025 9:59:07 AM', Current time (UTC): '5/13/2025 1:35:43 PM'.
+2025-05-13 16:35:43.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-05-13 16:35:43.424 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-05-13 16:35:43.424 +03:00 [INF] HTTP GET /api/Category responded 401 in 22.8708 ms
+2025-05-13 16:35:43.426 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category - 401 null application/json; charset=utf-8 36.4627ms
+2025-05-13 16:35:48.739 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - null null
+2025-05-13 16:35:48.750 +03:00 [INF] Executing endpoint 'Api.Controllers.CategoryController.GetById (Api)'
+2025-05-13 16:35:48.782 +03:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CategoryController (Api).
+2025-05-13 16:35:48.936 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[UpdatedAt]
+FROM [ProductCategories] AS [p]
+WHERE [p].[Id] = @__get_Item_0
+2025-05-13 16:35:48.975 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 16:35:49.017 +03:00 [INF] Executed action Api.Controllers.CategoryController.GetById (Api) in 225.0937ms
+2025-05-13 16:35:49.022 +03:00 [INF] Executed endpoint 'Api.Controllers.CategoryController.GetById (Api)'
+2025-05-13 16:35:49.025 +03:00 [INF] HTTP GET /api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 responded 200 in 279.2044 ms
+2025-05-13 16:35:49.034 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Category/88b3c150-e7cc-4a91-c8b6-08dd9202ff87 - 200 null application/json; charset=utf-8 294.315ms
+2025-05-13 16:35:54.558 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7231/api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 - null null
+2025-05-13 16:35:54.563 +03:00 [INF] Executing endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 16:35:54.569 +03:00 [INF] Route matched with {action = "GetById", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CompanyController (Api).
+2025-05-13 16:35:54.604 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+WHERE [c].[Id] = @__get_Item_0
+2025-05-13 16:35:54.632 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 16:35:54.636 +03:00 [INF] Executed action Api.Controllers.CompanyController.GetById (Api) in 64.9778ms
+2025-05-13 16:35:54.642 +03:00 [INF] Executed endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 16:35:54.643 +03:00 [INF] HTTP GET /api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 responded 200 in 80.0783 ms
+2025-05-13 16:35:54.647 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7231/api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 - 200 null application/json; charset=utf-8 88.5589ms
+2025-05-13 16:42:08.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 - null null
+2025-05-13 16:42:08.226 +03:00 [INF] Executing endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 16:42:08.228 +03:00 [INF] Route matched with {action = "GetById", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller Api.Controllers.CompanyController (Api).
+2025-05-13 16:42:08.295 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[ManagerId], [c].[Name], [c].[UpdatedAt]
+FROM [Companies] AS [c]
+WHERE [c].[Id] = @__get_Item_0
+2025-05-13 16:42:08.298 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Responses.GenericResponse'.
+2025-05-13 16:42:08.300 +03:00 [INF] Executed action Api.Controllers.CompanyController.GetById (Api) in 69.4859ms
+2025-05-13 16:42:08.302 +03:00 [INF] Executed endpoint 'Api.Controllers.CompanyController.GetById (Api)'
+2025-05-13 16:42:08.303 +03:00 [INF] HTTP GET /api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 responded 200 in 77.9227 ms
+2025-05-13 16:42:08.305 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/api/Company/843a07a9-f70b-4184-ca5d-08dd917e4748 - 200 null application/json; charset=utf-8 106.0151ms
+2025-05-13 16:42:08.436 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7231/favicon.ico - null null
+2025-05-13 16:42:08.441 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2355 ms
+2025-05-13 16:42:08.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7231/favicon.ico - 404 0 null 6.2735ms
+2025-05-13 16:42:08.447 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7231/favicon.ico, Response status code: 404
